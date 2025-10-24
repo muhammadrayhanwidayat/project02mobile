@@ -1,9 +1,9 @@
 package com.example.project02
 
+import android.inputmethodservice.Keyboard
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.R
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,6 +23,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -55,7 +56,7 @@ fun ActivitasPertama(modifier: Modifier){
         )
         {
             Row() {
-                val gambar = painterResource(id = R.drawable.reportdaily)
+                val gambar = painterResource(id = R.drawable.gambar)
                 Image(
                     painter = gambar,
                     contentDescription = null,
