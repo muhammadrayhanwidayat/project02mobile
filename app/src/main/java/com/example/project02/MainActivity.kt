@@ -1,5 +1,5 @@
 package com.example.project02
-
+import com.example.project02.ActivitasPertama
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -20,8 +20,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             Project02Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+
+                    ActivitasPertama(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -30,18 +30,11 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun GreetingPreview() {
+fun ActivitasPertamaPreview() {
     Project02Theme {
-        Greeting("Android")
+        ActivitasPertama(modifier = Modifier)
     }
 }
