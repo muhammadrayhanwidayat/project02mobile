@@ -1,6 +1,7 @@
 package com.example.project02
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.R
 import androidx.compose.foundation.layout.Row
@@ -78,6 +79,8 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
+        Box(
+            modifier = Modifier
     }
 
 
