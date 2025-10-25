@@ -50,3 +50,18 @@ fun Profile(modifier: Modifier = Modifier) {
                 R.drawable.tele,
                 R.drawable.linkedin
             )
+            icons.forEach { icon ->
+                Box(
+                    modifier = Modifier
+                        .size(45.dp)
+                        .clip(CircleShape),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Image(
+                        painter = painterResource(id = icon),
+                        contentDescription = null,
+                        modifier = Modifier.size(35.dp)
+                    )
+                }
+            }
+        }
