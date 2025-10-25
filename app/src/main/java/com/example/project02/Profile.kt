@@ -125,3 +125,24 @@ fun Profile(modifier: Modifier = Modifier) {
                                 .size(60.dp)
                                 .padding(all = 5.dp)
                         )
+
+                        Spacer(modifier = Modifier.width(20.dp))
+
+                        Text(
+                            text = stringResource(id = R.string.keamanan),
+                            fontSize = 25.sp,
+                            fontFamily = FontFamily.Cursive, // 🖋️ font italic
+                            color = Color.Black
+                        )
+                    }
+
+                    val iconDropdown = painterResource(id = R.drawable.dropdown)
+                    Image(
+                        painter = iconDropdown,
+                        contentDescription = "Dropdown Icon",
+                        modifier = Modifier
+                            .size(30.dp)
+                            .padding(end = 8.dp)
+                    )
+                }
+            }
