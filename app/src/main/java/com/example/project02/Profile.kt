@@ -65,3 +65,63 @@ fun Profile(modifier: Modifier = Modifier) {
                 }
             }
         }
+        Column(
+            modifier = Modifier
+                .padding(top = 20.dp)
+                .fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            // 🧍 Nama dan Deskripsi
+            Text(
+                text = stringResource(id = R.string.nama),
+                fontSize = 35.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Text(
+                text = stringResource(id = R.string.email),
+                fontSize = 15.sp,
+                color = Color.White
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Text(
+                text = "Saya Seorang UI/UX Designer",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
+
+            Spacer(modifier = Modifier.height(25.dp))
+
+            // Card 1
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 24.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color.White // 🤍 card putih
+                )
+            ) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 10.dp, vertical = 5.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        val gambar = painterResource(id = R.drawable.perisai)
+                        Image(
+                            painter = gambar,
+                            contentDescription = null,
+                            modifier = Modifier
+                                .size(60.dp)
+                                .padding(all = 5.dp)
+                        )
